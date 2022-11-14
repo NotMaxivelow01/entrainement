@@ -9,3 +9,10 @@
     width: 200px;
     background-color: blue;
 }
+
+#ParagraphCache {
+    display: none;
+}
+#Paragraph{
+    visibility:visible;
+}
