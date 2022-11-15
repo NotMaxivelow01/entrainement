@@ -1,7 +1,7 @@
 // const carre = document.getElementById('carre');
 // const carrebleu = document.getElementById('carrebleu')
-const Paragraph = document.getElementById('Paragraph')
-const ParagraphCache = document.getElementById('ParagraphCache')
+// const Paragraph = document.getElementById('Paragraph')
+// const ParagraphCache = document.getElementById('ParagraphCache')
 // carre.addEventListener('click');
 // function sayhello() {
 //     console.log("hello")
@@ -57,8 +57,17 @@ const plus = document.getElementById('plus');
 const moin = document.getElementById('moin');
 const reset = document.getElementById('reset');
 
-function passerEnNoir () {
+function passerEnNoir() {
     label.style.color = 'black';
+}
+function passerEnOrange() {
+    label.style.color = 'orange';
+}
+function ChangeColor (color) {
+    label.style.color = color;
+}
+function ChangeFontSize (fontSize){
+    label.style.fontSize = fontSize;
 }
 
 let counter = 0;
@@ -73,11 +82,15 @@ plus.addEventListener('click', () => {
         counter++;
         label.textContent = counter;
         if (counter === 0) {
-            label.style.color = 'red';
+            ChangeColor('red');
+            ChangeFontSize('20px')
         } else if (counter === 1 || counter === -1) {
-            label.style.color = 'orange';
-        }else {
+            ChangeColor('orange');
+        } else {
             passerEnNoir();
+        }
+        if (counter !== 0){
+            ChangeFontSize('16px')
         }
     }
     if (counter === maximume) {
@@ -93,11 +106,15 @@ moin.addEventListener('click', () => {
         counter--;
         label.textContent = counter;
         if (counter === 0) {
-            label.style.color = 'red';
-        } else if (counter === 1 || counter === -1){
-            label.style.color = 'orange';
-        }else {
+            ChangeColor('red');
+            ChangeFontSize('20px')
+        } else if (counter === 1 || counter === -1) {
+            ChangeColor('orange');
+        } else {
             passerEnNoir();
+        }
+        if (counter !== 0){
+            ChangeFontSize('16px')
         }
         if (counter === minimume) {
             moin.disabled = true;
@@ -127,4 +144,17 @@ reset.addEventListener('click', () => {
 
 
 
+
+
+
+
+
+
+
+ 
+
 const seg = document.getElementById('seg')
+
+function unPerSeg() {
+
+}
