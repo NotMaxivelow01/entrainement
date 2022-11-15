@@ -13,6 +13,11 @@
 #ParagraphCache {
     display: none;
 }
-#Paragraph{
-    visibility:visible;
+
+#Paragraph {
+    visibility: visible;
+}
+
+#label {
+    color: red;
 }
