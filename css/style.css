@@ -22,3 +22,26 @@
     color: red;
     font-size: 20px;
 }
+#reset {
+    color: white;
+    background-color: black;
+    width: 75px;
+    height: 50px;
+}
+#plus{
+    background-color: red;
+    width: 75px;
+    height: 40px;
+}
+#moin{
+    background-color: blue;
+    width: 75px;
+    height: 40px;
+}
+#dix{
+    background-color: aqua;
+}
+#cinq{
+    background-color: yellow;
+}
+
